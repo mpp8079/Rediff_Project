@@ -25,11 +25,11 @@ public class Driver {
 			
 			
 			else if(ObjectRepository.browser.browser.equalsIgnoreCase("Chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\local\\MarshWorkplace\\Rediff_Project\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\rediff_project\\Rediff_Project\\Rediff_Project\\chromedriver.exe");
 			Instance = new ChromeDriver();
 			
 		}else if(ObjectRepository.browser.browser.equalsIgnoreCase("IE")){
-			System.setProperty("webdriver.IE.driver", "C:\\local\\MarshWorkplace\\Rediff_Project\\IEDriverServer.exe");
+			System.setProperty("webdriver.IE.driver", "C:\\rediff_project\\Rediff_Project\\Rediff_Project\\IEDriverServer.exe");
 			Instance = new InternetExplorerDriver();
 		
 		}else{
