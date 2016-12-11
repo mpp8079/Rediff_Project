@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30736" started-at="2016-12-10T23:13:36Z" finished-at="2016-12-10T23:14:07Z">
+  <suite name="Default suite" duration-ms="87469" started-at="2016-12-11T20:52:06Z" finished-at="2016-12-11T20:53:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30736" started-at="2016-12-10T23:13:36Z" finished-at="2016-12-10T23:14:07Z">
-      <class name="com.reiff.testcases.Login">
-        <test-method status="PASS" signature="openBorwserAndUrl()[pri:0, instance:com.reiff.testcases.Login@6b2fad11]" name="openBorwserAndUrl" is-config="true" duration-ms="9636" started-at="2016-12-10T17:13:36Z" finished-at="2016-12-10T17:13:46Z">
+    <test name="Default test" duration-ms="87469" started-at="2016-12-11T20:52:06Z" finished-at="2016-12-11T20:53:33Z">
+      <class name="com.reiff.testcases.RunTest">
+        <test-method status="PASS" signature="openBorwserAndUrl()[pri:0, instance:com.reiff.testcases.RunTest@6b2fad11]" name="openBorwserAndUrl" is-config="true" duration-ms="10822" started-at="2016-12-11T14:52:06Z" finished-at="2016-12-11T14:52:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBorwserAndUrl -->
-        <test-method status="PASS" signature="clicklogin()[pri:0, instance:com.reiff.testcases.Login@6b2fad11]" name="clicklogin" duration-ms="21063" started-at="2016-12-10T17:13:46Z" finished-at="2016-12-10T17:14:07Z">
+        <test-method status="PASS" signature="runTest()[pri:0, instance:com.reiff.testcases.RunTest@6b2fad11]" name="runTest" duration-ms="76613" started-at="2016-12-11T14:52:17Z" finished-at="2016-12-11T14:53:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clicklogin -->
-      </class> <!-- com.reiff.testcases.Login -->
+        </test-method> <!-- runTest -->
+      </class> <!-- com.reiff.testcases.RunTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

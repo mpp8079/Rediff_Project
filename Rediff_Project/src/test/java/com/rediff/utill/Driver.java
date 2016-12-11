@@ -58,4 +58,9 @@ public class Driver {
 	public static void quit(){
 		Instance.quit();
 	}
+	
+	public static void Wait(){
+		Instance.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
+	}
 }

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.reiff.testcases.Login">
+      <class name="com.reiff.testcases.RunTest">
         <methods>
           <include name="openBorwserAndUrl"/>
-          <include name="clicklogin"/>
+          <include name="runTest"/>
         </methods>
-      </class> <!-- com.reiff.testcases.Login -->
+      </class> <!-- com.reiff.testcases.RunTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
