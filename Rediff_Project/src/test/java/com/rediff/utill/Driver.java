@@ -3,6 +3,7 @@ package com.rediff.utill;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -63,4 +64,36 @@ public class Driver {
 		Instance.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 	}
+	
+	
+	public static void waitAndClick(String elementToClick, String elementVisable){
+		for(int i=0;i<5;i++){
+			Instance.findElement(By.xpath(elementToClick)).click();
+			
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			if(isElementPresent(elementToClick)|| Instance.findElement(By.xpath(elementVisable)).isDisplayed());
+		}
+	}
+	
+	
+	
+	
+	public static boolean isElementPresent(String XPath){
+		int getSize = Driver.Instance.findElements(By.xpath(XPath)).size();
+		Driver.Instance.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		if(getSize < 0)
+		return true;
+		else			
+		return false;
+	}
+	
+	
+	
+	
+	
 }

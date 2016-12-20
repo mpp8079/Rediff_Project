@@ -1,10 +1,6 @@
 package com.reiff.testcases;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import com.rediff.config.ObjectRepository;
 import com.rediff.utill.Driver;
@@ -40,6 +36,8 @@ public class Login {
 		Driver.click(ObjectRepository.Login_submitt_button);		
 		Driver.Wait();
 	}
+	
+	
 	
 	
 	

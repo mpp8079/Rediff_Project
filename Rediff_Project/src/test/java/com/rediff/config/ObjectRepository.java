@@ -9,8 +9,18 @@ public class ObjectRepository {
 	public static String password =".//*[@id='userpass']";
 	public static String user_submitt_button =".//*[@id='emailsubmit']";
 	public static String Login_submitt_button =".//*[@id='loginsubmit']";
-			
-			
+	public static String createProfile_button =".//*[@id='createPortfolioButton']";		
+	public static String createProfile_Link =".//*[@id='createPortfolio']";
+	public static String profile_Text_Box=".//*[@id='create']";
+	public static String profile_Delete=".//*[@id='deletePortfolio']";
+	public static String rename_protfolio=".//*[@id='renamePortfolio']";
+	public static String rename_Text_Box=".//*[@id='rename']";
+	public static String rename_button =".//*[@id='renamePortfolioButton']";	
+	public static String add_Stock=".//*[@id='addStock']";
+	public static String add_Stock_button=".//*[@id='addStockButton']";	
+	public static String add_Stock_name=".//*[@id='addstockname']";
+	
+	
 	public static class getUrl{
 		public static String url="http://www.rediff.com/";
 	}
