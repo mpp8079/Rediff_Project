@@ -21,25 +21,25 @@ public class Driver {
 
 	public static void Initalize(){
 		if(Instance==null){
-			if(ObjectRepository.browser.browser.equalsIgnoreCase("FireFox"))
-			Instance = new FirefoxDriver();
 			
+			if(ObjectRepository.browser.browser.equalsIgnoreCase("FireFox"))
+				Instance = new FirefoxDriver();
 			
 			else if(ObjectRepository.browser.browser.equalsIgnoreCase("Chrome")){
 			System.setProperty("webdriver.chrome.driver", "C:\\rediff_project\\Rediff_Project\\Rediff_Project\\chromedriver.exe");
 			Instance = new ChromeDriver();
 			
-		}else if(ObjectRepository.browser.browser.equalsIgnoreCase("IE")){
+			}else if(ObjectRepository.browser.browser.equalsIgnoreCase("IE")){
 			System.setProperty("webdriver.IE.driver", "C:\\rediff_project\\Rediff_Project\\Rediff_Project\\IEDriverServer.exe");
 			Instance = new InternetExplorerDriver();
 		
-		}else{
+			}else{
 			Assert.fail("Invalid Browser");
-		}
+			}
 		
-		Instance.manage().window().maximize();
-		Instance.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-	}
+			Instance.manage().window().maximize();
+			Instance.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		}
 	}
 	
 	public static void click(String x_path){
