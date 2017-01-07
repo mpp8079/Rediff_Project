@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.rediff.rough.DataFromExcel">
+      <class name="com.reiff.testcases.RunTest">
         <methods>
-          <include name="testData"/>
+          <include name="openBorwserAndUrl"/>
+          <include name="runTest"/>
         </methods>
-      </class> <!-- com.rediff.rough.DataFromExcel -->
+      </class> <!-- com.reiff.testcases.RunTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
